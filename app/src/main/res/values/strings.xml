@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StoryWithFragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Reviews</item>
+        <item>Category</item>
+        <item>Profile</item>
+        <item>Write Story</item>
+        <item>Settings</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_reviews</item>
+        <item>@drawable/ic_category</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_write_story</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/rlMenuHolder"
+        >
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_upper_part"
+            android:id="@+id/rlMenuUpperPart">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/menu_profile_image_backgorund"
+                android:padding="3dp"
+                android:src="@drawable/ic_communities"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/imgMenuProfileImage"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Humphrey Swynborne"
+                android:layout_toRightOf="@+id/imgMenuProfileImage"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#fff"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:id="@+id/txtProfileName"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="newsletter@zend.com"
+                android:layout_below="@+id/txtProfileName"
+                android:layout_toRightOf="@+id/imgMenuProfileImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textColor="#ffe400"
+                />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector"
+            android:background="@color/list_background"
+            android:layout_below="@+id/rlMenuUpperPart"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rlMenuUpperPart"
+            android:background="@drawable/menu_profile_vertical_background"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
