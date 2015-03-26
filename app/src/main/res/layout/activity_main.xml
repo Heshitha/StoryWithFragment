@@ -11,18 +11,53 @@
         android:layout_height="match_parent"
         android:id="@+id/rlContentHolder"
         >
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Click Me"
-            android:id="@+id/btnClickMe"
-            android:layout_alignParentTop="true"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rlTitleBarHolder"
+            android:background="#f6f6f6">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/imgBtnMenu"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/menu"
+                android:scaleType="centerInside"
+                android:background="@color/transparent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/txtTitleIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/titlebarstoryicon"
+                android:adjustViewBounds="true"/>
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgBtnSettings"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/settingicon"
+                android:scaleType="centerInside"
+                android:background="@color/transparent"/>
+
+        </RelativeLayout>
+
 
         <FrameLayout
             android:id="@+id/frame_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/btnClickMe"/>
+            android:layout_below="@+id/rlTitleBarHolder"/>
 
         </RelativeLayout>
 
@@ -30,7 +65,7 @@
     <!-- Listview to display slider menu -->
 
     <RelativeLayout
-        android:layout_width="250dp"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:id="@+id/rlMenuHolder"
@@ -79,6 +114,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:textColor="#ffe400"
                 />
@@ -94,7 +130,7 @@
             android:background="@color/list_background"
             android:layout_below="@+id/rlMenuUpperPart"/>
         <View
-            android:layout_width="10dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/rlMenuUpperPart"
             android:background="@drawable/menu_profile_vertical_background"/>

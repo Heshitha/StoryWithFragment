@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
@@ -33,7 +34,7 @@ public class MainActivity extends Activity {
     private ListView lstSliderMenu;
     RelativeLayout rlContentHolder;
 
-    Button btnClickMe;
+    ImageButton imgBtnMenu;
 
     // nav drawer title
     private CharSequence mDrawerTitle;
@@ -69,7 +70,7 @@ public class MainActivity extends Activity {
         lstSliderMenu = (ListView) findViewById(R.id.list_slidermenu);
         rlContentHolder = (RelativeLayout)findViewById(R.id.rlContentHolder);
 
-        btnClickMe = (Button)findViewById(R.id.btnClickMe);
+        imgBtnMenu = (ImageButton)findViewById(R.id.imgBtnMenu);
 
         navDrawerItems = new ArrayList<NavDrawerItem>();
 
@@ -144,7 +145,7 @@ public class MainActivity extends Activity {
             displayView(0);
         }
 
-        btnClickMe.setOnClickListener(new View.OnClickListener() {
+        imgBtnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mDrawerLayout.openDrawer(mDrawerList);
